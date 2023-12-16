@@ -6,33 +6,50 @@
 
 ############ Task_1
 
-n1 = int(input("Введіть перше число: "))
-n2 = int(input("Введіть друге число: "))
-n3 = int(input("Введіть третє число: "))
+# n1 = int(input("Введіть перше число: "))
+# n2 = int(input("Введіть друге число: "))
+# n3 = int(input("Введіть третє число: "))
+#
+# choice = int(input("Оберіть операцію (1 - максимум, 2 - мінімум, 3 - середнє арифметичне): "))
+#
+# if choice == 1:
+#     if n1 >= n2 and n1 >= n3:
+#         print(f"Максимум: {n1}")
+#     elif n2 >= n1 and n2 >= n3:
+#         print(f"Максимум: {n2}")
+#     elif n3 >= n2 and n3 >= n1:
+#         print(f"Максимум: {n3}")
+#     else:
+#         print("Всі числа рівні")
+#
+# elif choice == 2:
+#     if n1 <= n2 and n1 <= n3:
+#         print(f"Мінімум: {n1}")
+#     elif n2 <= n1 and n2 <= n3:
+#         print(f"Мінімум: {n2}")
+#     elif n3 <= n2 and n3 <= n1:
+#         print(f"Мінімум: {n3}")
+#     else:
+#         print("Всі числа рівні")
+# elif choice == 3:
+#     result = (n1 + n2 + n3)/3
+#     print(f"Середнє арифметичне: {result}")
+# else:
+#     print("Невірний вибір. Оберіть 1, 2 або 3.")
 
-choice = int(input("Оберіть операцію (1 - максимум, 2 - мінімум, 3 - середнє арифметичне): "))
+############ Task_2
+
+meters = int(input("Введіть кількість метрів: "))
+choice = int(input("Оберіть одиниці вимірювання (1 - мілі, 2 - дюйми, 3 - ярди): "))
 
 if choice == 1:
-    if n1 >= n2 and n1 >= n3:
-        print(f"Максимум: {n1}")
-    elif n2 >= n1 and n2 >= n3:
-        print(f"Максимум: {n2}")
-    elif n3 >= n2 and n3 >= n1:
-        print(f"Максимум: {n3}")
-    else:
-        print("Всі числа рівні")
-
+    result = meters * 0.000621371
+    print(f"{meters} метрів дорівнює - {result} миль")
 elif choice == 2:
-    if n1 <= n2 and n1 <= n3:
-        print(f"Мінімум: {n1}")
-    elif n2 <= n1 and n2 <= n3:
-        print(f"Мінімум: {n2}")
-    elif n3 <= n2 and n3 <= n1:
-        print(f"Мінімум: {n3}")
-    else:
-        print("Всі числа рівні")
+    result = meters * 39.3701
+    print(f"{meters} метрів дорівнює - {result} дюймам")
 elif choice == 3:
-    result = (n1 + n2 + n3)/3
-    print(f"Середнє арифметичне: {result}")
+    result = meters * 1.09361
+    print(f"{meters} метрів дорівнює - {result} ярдам")
 else:
-    print("Невірний вибір. Оберіть 1, 2 або 3.")
+    print("Невірний вибір. Оберіть 1, 2 або 3")
